@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Landing</title>
+	<script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+
+	<!--MIXPANEL-->
+	<!-- start Mixpanel -->
+	<script type="text/javascript">(function (c, a) {
+		if (!a.__SV) {
+			var b = window;
+			try {
+				var d, m, j, k = b.location, f = k.hash;
+				d = function (a, b) {
+					return (m = a.match(RegExp(b + "=([^&]*)"))) ? m[1] : null
+				};
+				f && d(f, "state") && (j = JSON.parse(decodeURIComponent(d(f, "state"))), "mpeditor" === j.action && (b.sessionStorage.setItem("_mpcehash", f), history.replaceState(j.desiredHash || "", c.title, k.pathname + k.search)))
+			} catch (n) {
+			}
+			var l, h;
+			window.mixpanel = a;
+			a._i = [];
+			a.init = function (b, d, g) {
+				function c(b, i) {
+					var a = i.split(".");
+					2 == a.length && (b = b[a[0]], i = a[1]);
+					b[i] = function () {
+						b.push([i].concat(Array.prototype.slice.call(arguments,
+							0)))
+					}
+				}
+
+				var e = a;
+				"undefined" !== typeof g ? e = a[g] = [] : g = "mixpanel";
+				e.people = e.people || [];
+				e.toString = function (b) {
+					var a = "mixpanel";
+					"mixpanel" !== g && (a += "." + g);
+					b || (a += " (stub)");
+					return a
+				};
+				e.people.toString = function () {
+					return e.toString(1) + ".people (stub)"
+				};
+				l = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+				for (h = 0; h < l.length; h++) c(e, l[h]);
+				var f = "set set_once union unset remove delete".split(" ");
+				e.get_group = function () {
+					function a(c) {
+						b[c] = function () {
+							call2_args = arguments;
+							call2 = [c].concat(Array.prototype.slice.call(call2_args, 0));
+							e.push([d, call2])
+						}
+					}
+
+					for (var b = {}, d = ["get_group"].concat(Array.prototype.slice.call(arguments, 0)), c = 0; c < f.length; c++) a(f[c]);
+					return b
+				};
+				a._i.push([b, d, g])
+			};
+			a.__SV = 1.2;
+			b = c.createElement("script");
+			b.type = "text/javascript";
+			b.async = !0;
+			b.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ?
+				MIXPANEL_CUSTOM_LIB_URL : "file:" === c.location.protocol && "//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";
+			d = c.getElementsByTagName("script")[0];
+			d.parentNode.insertBefore(b, d)
+		}
+	})(document, window.mixpanel || []);
+	mixpanel.init("f07479b311d0ae2b7978191eb4b7daea");</script><!-- end Mixpanel -->
+
+
+	<link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Ubuntu,Oxygen:700" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="sass/landing.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+
+	<!-- jQuery Modal -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+
+	<script src="js/classes/UI.js"></script>
+	<script src="js/classes/Validate.js"></script>
+	<script src="js/config.js"></script>
+	<script src="js/landing.js"></script>
+
+
+</head>
+<body class="is-boxed has-animations">
+
+
+<!-- Modal HTML embedded directly into document -->
+<div id="ex1" class="modal">
+
+	<form class="ui form">
+
+		<h1>Join our Waitlist</h1>
+
+		<div class="alerts">
+		</div>
+
+		<div class="field">
+			<p>Join our waitlist to be our early stage beta tester! Get ahead and be the first to test this product.</p>
+		</div>
+
+		<div class="field">
+			<label>Email:</label>
+			<input type="email" name="email" placeholder="E-mail" id="userEmail">
+		</div>
+		<a class="ui custom-purple button" href="#" id="joinWaitlist">Join Waitlist</a>
+	</form>
+
+</div>
+
+
+<div class="body-wrap boxed-container">
+	<header class="site-header text-light">
+		<div class="container">
+			<div class="site-header-inner">
+				<div class="brand header-brand">
+					<h1 class="m-0">
+						<a href="#">
+							<img class="header-logo-image" src="images/logo.svg" alt="Logo">
+						</a>
+					</h1>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero text-center text-light">
+			<div class="hero-bg"></div>
+			<div class="hero-particles-container">
+				<canvas id="hero-particles"></canvas>
+			</div>
+			<div class="container-sm">
+				<div class="hero-inner">
+					<div class="hero-copy">
+						<h1 class="hero-title mt-0" id="headline">Landing template for startups</h1>
+						<p class="hero-paragraph" id="subtitle">Our landing page template works on all devices, so you
+							only have to
+							set it up once, and get beautiful results forever.</p>
+						<div class="hero-cta">
+
+
+							<a class="button button-primary button-wide-mobile" href="#ex1" rel="modal:open">Get early
+								access</a>
+						</div>
+					</div>
+					<div class="mockup-container">
+
+						<img class="device-mockup" id="first-mobile-mockup" src="images/iphone-hero.png"
+							 alt="iPhone Hero">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="features-extended section">
+			<div class="features-extended-inner section-inner">
+				<div class="features-extended-wrap">
+					<div class="container">
+						<div class="feature-extended">
+							<div class="feature-extended-image">
+
+								<img class="device-mockup is-revealing" id="second-mobile-mockup"
+									 src="images/iphone-feature-01.png"
+									 alt="iPhone Feature 01">
+							</div>
+							<div class="feature-extended-body is-revealing">
+								<h3 class="mt-0 mb-16" id="second-mobile-title">Amazing features, coming soon.</h3>
+								<p class="m-0" id="second-mobile-description">Quam quisque id diam vel quam elementum
+									pulvinar. Ut etiam sit amet nisl
+									purus in mollis nunc. Odio morbi quis commodo odio aenean sed adipiscing diam
+									donec.</p>
+							</div>
+						</div>
+						<div class="feature-extended">
+							<div class="feature-extended-image">
+
+								<img id="third-mobile-mockup" class="device-mockup is-revealing"
+									 src="images/iphone-feature-02.png"
+									 alt="iPhone Feature 02">
+							</div>
+							<div class="feature-extended-body is-revealing">
+								<h3 class="mt-0 mb-16" id="third-mobile-title">Amazing features, coming soon.</h3>
+								<p class="m-0" id="third-mobile-description">Quam quisque id diam vel quam elementum
+									pulvinar. Ut etiam sit amet nisl
+									purus in mollis nunc. Odio morbi quis commodo odio aenean sed adipiscing diam
+									donec.</p>
+							</div>
+						</div>
+						<div class="feature-extended">
+							<div class="feature-extended-image">
+
+								<img id="fourth-mobile-mockup" class="device-mockup is-revealing"
+									 src="images/iphone-feature-03.png"
+									 alt="iPhone Feature 03">
+							</div>
+							<div class="feature-extended-body is-revealing">
+								<h3 class="mt-0 mb-16" id="fourth-mobile-title">Amazing features, coming soon.</h3>
+								<p class="m-0" id="fourth-mobile-description">Quam quisque id diam vel quam elementum
+									pulvinar. Ut etiam sit amet nisl
+									purus in mollis nunc. Odio morbi quis commodo odio aenean sed adipiscing diam
+									donec.</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="footer-particles-container">
+			<canvas id="footer-particles"></canvas>
+		</div>
+		<div class="site-footer-top">
+			<section class="cta section text-light">
+				<div class="container-sm">
+					<div class="cta-inner section-inner">
+						<div class="cta-header text-center">
+							<h2 class="section-title mt-0" id="footer-headline">Stay in the know</h2>
+							<p class="section-paragraph" id="footer-subtitle">Lorem ipsum is common placeholder text
+								used to demonstrate the
+								graphic elements of a document or visual presentation.</p>
+							<div class="cta-cta">
+								<a class="button button-primary button-wide-mobile" href="#">Get early access</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!--<div class="site-footer-bottom">-->
+		<!--<div class="container">-->
+		<!--<div class="site-footer-inner">-->
+		<!--<div class="brand footer-brand">-->
+		<!--<a href="#">-->
+		<!--<img src="images/logo.svg" alt="Venus logo">-->
+		<!--</a>-->
+		<!--</div>-->
+		<!--<ul class="footer-links list-reset">-->
+		<!--<li>-->
+		<!--<a href="#">Contact</a>-->
+		<!--</li>-->
+		<!--<li>-->
+		<!--<a href="#">About us</a>-->
+		<!--</li>-->
+		<!--<li>-->
+		<!--<a href="#">FAQ's</a>-->
+		<!--</li>-->
+		<!--<li>-->
+		<!--<a href="#">Support</a>-->
+		<!--</li>-->
+		<!--</ul>-->
+		<!--<ul class="footer-social-links list-reset">-->
+		<!--<li>-->
+		<!--<a href="#">-->
+		<!--<span class="screen-reader-text">Facebook</span>-->
+		<!--<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">-->
+		<!--<path-->
+		<!--d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z"-->
+		<!--fill="#FFF"/>-->
+		<!--</svg>-->
+		<!--</a>-->
+		<!--</li>-->
+		<!--<li>-->
+		<!--<a href="#">-->
+		<!--<span class="screen-reader-text">Twitter</span>-->
+		<!--<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">-->
+		<!--<path-->
+		<!--d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z"-->
+		<!--fill="#FFF"/>-->
+		<!--</svg>-->
+		<!--</a>-->
+		<!--</li>-->
+		<!--<li>-->
+		<!--<a href="#">-->
+		<!--<span class="screen-reader-text">Google</span>-->
+		<!--<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">-->
+		<!--<path-->
+		<!--d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z"-->
+		<!--fill="#FFF"/>-->
+		<!--</svg>-->
+		<!--</a>-->
+		<!--</li>-->
+		<!--</ul>-->
+		<!--<div class="footer-copyright">&copy; 2018 Venus, all rights reserved</div>-->
+		<!--</div>-->
+		<!--</div>-->
+		<!--</div>-->
+	</footer>
+</div>
+
+<script src="js/main.min.js"></script>
+</body>
+</html>

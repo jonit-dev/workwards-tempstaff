@@ -8,21 +8,37 @@ const config = {
 
   //Tracking
 
-  'ideaname': 'anotheridea',
+  'ideaname': 'workwards',
 
 
   // Content
 
-  'headline': 'This is the headline',
-  'subtitle': 'subtitle here',
-  'first-mobile-mockup':'images/iphone-hero.png',
-  'second-mobile-mockup': 'images/iphone-feature-01.png',
-  'second-mobile-title': 'Second mobile',
-  'second-mobile-description': 'second mobile description',
-  'third-mobile-title': 'Third mobile',
-  'third-mobile-description': 'third mobile description',
+  'headline': 'Job Hopping made easy',
+  'subtitle': 'Receive better job offers while employed',
+  'first-mobile-mockup':'images/workwards-main.png',
+
+
+
+
+  //Benefits
+
+  'second-mobile-mockup': 'images/workwards-offers.png',
+  'second-mobile-title': 'Receive Offers',
+  'second-mobile-description': 'Just create your anonymous profile and start receiving offers! You can also set a minimum bid, maximizing your chances to find a better deal.',
+
+
+  'third-mobile-mockup': 'images/workwards-recruiters.png',
+  'third-mobile-title': 'Chat with Recruiters',
+  'third-mobile-description': 'After accepting an offer you can instantly start chatting with potential employers and schedule an interview',
+
+
+  'fourth-mobile-mockup': 'images/iphone-feature-01.png',
   'fourth-mobile-title': 'fourth mobile',
   'fourth-mobile-description': 'fourth mobile description',
+
+
+
+
   'footer-headline': 'This is the footer',
   'footer-subtitle': 'place some cool subtitle here'
 };

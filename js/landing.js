@@ -15,17 +15,25 @@ $(function () {
 
   $("#headline").html(config['headline']);
   $("#subtitle").html(config['subtitle']);
-  $("#first-mobile-mockup").html(config['first-mobile-mockup']);
-  $("#second-mobile-mockup").html(config['second-mobile-mockup']);
+
+
+  //mobile mockups
+
+  $("#first-mobile-mockup").attr('src', config['first-mobile-mockup']);
+  $("#second-mobile-mockup").attr('src',config['second-mobile-mockup']);
+  $("#third-mobile-mockup").attr('src',config['third-mobile-mockup']);
+  $("#fourth-mobile-mockup").attr('src',config['fourth-mobile-mockup']);
+
+
+  //Content
+
   $("#second-mobile-title").html(config['second-mobile-title']);
   $("#second-mobile-description").html(config['second-mobile-description']);
 
-  $("#third-mobile-mockup").html(config['third-mobile-mockup']);
   $("#third-mobile-title").html(config['third-mobile-title']);
   $("#third-mobile-description").html(config['third-mobile-description']);
 
 
-  $("#fourth-mobile-mockup").html(config['fourth-mobile-mockup']);
   $("#fourth-mobile-title").html(config['fourth-mobile-title']);
   $("#fourth-mobile-description").html(config['fourth-mobile-description']);
 

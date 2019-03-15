@@ -39,6 +39,6 @@ const config = {
 
 
 
-  'footer-headline': 'This is the footer',
-  'footer-subtitle': 'place some cool subtitle here'
+  'footer-headline': 'Job Hopping made easy',
+  'footer-subtitle': 'Receive better job offers while employed'
 };
